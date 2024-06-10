@@ -58,7 +58,7 @@ export default function ItemList() {
     return (
         <ul>
             {items.map((item) => (
-                <Item {...item} />
+                <Item {...item}/>
             ))} 
         </ul>
     );
