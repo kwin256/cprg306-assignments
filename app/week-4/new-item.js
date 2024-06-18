@@ -17,7 +17,7 @@ export default function NewItem() {
     }
 
     return (
-        <form  className = "" onSubmit={handleSubmit}>
+        <form  class = "flex p-2" onSubmit={handleSubmit}>
             <label>
                 Name:
                 <input
@@ -57,7 +57,7 @@ export default function NewItem() {
                     <option value="other">Other</option>
                 </select>
             </label>
-            <button className="">+</button>
+            <button class="bg-blue-300 w-20">+</button>
         </form>
     );
 }
