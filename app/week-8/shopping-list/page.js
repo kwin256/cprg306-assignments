@@ -11,7 +11,7 @@ import { useUserAuth } from "../_utils/auth-context";
 
 export default function Page() {
 
-    const { user } = useUserAuth();
+    const { user, gitHubSignIn } = useUserAuth();
     const [items, setItems] = useState([...itemData]);
     const [selectedItemName, setSelectedItemName] = useState("");   
     let handleAddItem = (item) => { setItems([...items, item]); }
